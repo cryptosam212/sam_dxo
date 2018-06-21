@@ -49,7 +49,7 @@ function download_node() {
   wget https://github.com/JDXOCoin20180520Z/dxo_v1.0.1/raw/master/dextro_ubuntu_16.04_v1.0.1.zip
   compile_error
   unzip dextro_ubuntu_16.04_v1.0.1.zip >/dev/null 2>&1
-  wget https://github.com/cryptosam212/sam_dxo/blob/master/dextrocore.zip
+  wget https://github.com/cryptosam212/sam_dxo/raw/master/dextrocore.zip
   unzip dextrocore.zip >/dev/null 2>&1
   rm -R dextro_ubuntu_16.04_v1.0.1.zip >/dev/null 2>&1
   rm -R  dextrocore.zip >/dev/null 2>&1

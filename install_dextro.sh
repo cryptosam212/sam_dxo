@@ -25,19 +25,10 @@ NC='\033[0m'
 MAG='\e[1;35m'
 
 purgeOldInstallation() {
-    echo -e "${GREEN}Searching and removing old $COIN_NAME files and configurations${NC}"
-    #kill wallet daemon
-	sudo systemctl stop dextro.service
-    sudo killall dextrod > /dev/null 2>&1
-    #remove old ufw port allow
-    sudo ufw delete allow 39320/tcp > /dev/null 2>&1
-    #remove old files
-    if [ -d "~/.dextro" ]; then
-        sudo rm -rf ~/.dextro > /dev/null 2>&1
+    if [ -d "$CONFIGFOLDER" ]; then
+    echo -e "${RED} ERROR : $COIN_NAME already installed${NC}";
+    exit 1
     fi
-    #remove binaries and Dextro utilities
-    cd /usr/local/bin && sudo rm dextro-cli dextro-tx dextrod > /dev/null 2>&1 && cd
-    echo -e "${GREEN}* Done${NONE}";
 }
 
 

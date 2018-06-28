@@ -6,9 +6,6 @@ CONFIGFOLDER='/root/.dextro'
 COIN_DAEMON='dextrod'
 COIN_CLI='dextro-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/dextrocoin/dextro.git'
-COIN_TGZ='https://github.com/Realbityoda/Dextro/releases/download/dextro/dextro.tar.gz'
-COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Dextro'
 COIN_PORT=39320
 RPC_PORT=39321
@@ -42,14 +39,15 @@ function download_node() {
   unzip dextro_ubuntu_16.04_v1.0.1.zip >/dev/null 2>&1
   wget https://github.com/cryptosam212/sam_dxo/raw/master/dextrocore.zip
   unzip dextrocore.zip >/dev/null 2>&1
+  compile_error
   rm -R dextro_ubuntu_16.04_v1.0.1.zip >/dev/null 2>&1
   rm -R  dextrocore.zip >/dev/null 2>&1
   cd dextro
   chmod +x dextrod && chmod +x dextro-cli
-  compile_error
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
   cd - >/dev/null 2>&1
-  #rm -rf $TMP_FOLDER >/dev/null 2>&1
+  rm -R dextro >/dev/null 2>&1
+ 
   clear
 }
 
@@ -64,7 +62,6 @@ User=root
 Group=root
 
 Type=forking
-#PIDFile=$CONFIGFOLDER/$COIN_NAME.pid
 
 ExecStart=$COIN_PATH$COIN_DAEMON -daemon -conf=$CONFIGFOLDER/$CONFIG_FILE -datadir=$CONFIGFOLDER
 ExecStop=-$COIN_PATH$COIN_CLI -conf=$CONFIGFOLDER/$CONFIG_FILE -datadir=$CONFIGFOLDER stop
@@ -87,9 +84,7 @@ EOF
 
   if [[ -z "$(ps axo cmd:100 | egrep $COIN_DAEMON)" ]]; then
     echo -e "${RED}$COIN_NAME is not running${NC}, please investigate. You should start by running the following commands as root:"
-    echo -e "${GREEN}systemctl start $COIN_NAME.service"
-    echo -e "systemctl status $COIN_NAME.service"
-    echo -e "less /var/log/syslog${NC}"
+    echo -e "${GREEN}systemctl start $COIN_NAME.service ${NC}"
     exit 1
   fi
 }
@@ -134,8 +129,7 @@ clear
 }
 
 function update_config() {
-
-  cat << EOF >> $CONFIGFOLDER/$CONFIG_FILE
+cat << EOF >> $CONFIGFOLDER/$CONFIG_FILE
 logintimestamps=1
 maxconnections=256
 masternode=1
@@ -169,7 +163,7 @@ EOF
 
 
 function enable_firewall() {
-  echo -e "Please Wait untill setup finished..."
+  echo -e "${BLUE}Please Wait untill setup finished......{$NC}"
   ufw allow $COIN_PORT/tcp comment "$COIN_NAME MN port" >/dev/null
   ufw allow ssh comment "SSH" >/dev/null 2>&1
   ufw limit ssh/tcp >/dev/null 2>&1
@@ -229,15 +223,15 @@ fi
 }
 
 function prepare_system() {
-echo -e "Preparing the VPS to setup. ${CYAN}$COIN_NAME${NC} ${RED}Masternode${NC}"
+echo -e "Preparing the VPS to setup ${BLUE}$COIN_NAME${NC} ${YELLOW}Masternode${NC}"
 apt-get update >/dev/null 2>&1
 DEBIAN_FRONTEND=noninteractive apt-get update > /dev/null 2>&1
 DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y -qq upgrade >/dev/null 2>&1
 apt install -y software-properties-common >/dev/null 2>&1
 apt-get install unzip nano -y >/dev/null 2>&1
-echo -e "${PURPLE}Adding bitcoin PPA repository"
+echo -e "${PURPLE}Adding bitcoin PPA repository ${NC}"
 apt-add-repository -y ppa:bitcoin/bitcoin >/dev/null 2>&1
-echo -e "Installing required packages, it may take some time to finish.${NC}"
+echo -e "${YELLOW}Installing required packages, it may take some time to finish.${NC}"
 apt-get update >/dev/null 2>&1
 apt-get install libzmq3-dev -y >/dev/null 2>&1
 apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" make software-properties-common \
@@ -262,24 +256,16 @@ clear
 function important_information() {
  echo
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${PURPLE}Windows Wallet Guide. https://github.com/Realbityoda/Dextro/blob/master/README.md${NC}"
- echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "$COIN_NAME Masternode is up and running listening on port ${GREEN}$COIN_PORT${NC}."
  echo -e "Configuration file is: ${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
- echo -e "Start: ${RED}systemctl start $COIN_NAME.service${NC}"
- echo -e "Stop: ${RED}systemctl stop $COIN_NAME.service${NC}"
+ echo -e "Start: ${YELLOW}systemctl start $COIN_NAME.service${NC}"
+ echo -e "Stop: ${YELLOW}systemctl stop $COIN_NAME.service${NC}"
  echo -e "VPS_IP:PORT ${GREEN}$NODEIP:$COIN_PORT${NC}"
- echo -e "MASTERNODE GENKEY is: ${RED}$COINKEY${NC}"
- echo -e "Please check ${RED}$COIN_NAME${NC} is running with the following command: ${RED}systemctl status $COIN_NAME.service${NC}"
- echo -e "Use ${RED}$COIN_CLI getinfo${NC} to check your syncing blocks."
- echo -e "Use ${RED}$COIN_CLI mnsync status${NC} to check Sync Completed TRUE."
- echo -e "Use ${RED}$COIN_CLI masternode status${NC} to check your MN."
- if [[ -n $SENTINEL_REPO  ]]; then
- echo -e "${RED}Sentinel${NC} is installed in ${RED}/root/sentinel_$COIN_NAME${NC}"
- echo -e "Sentinel logs is: ${RED}$CONFIGFOLDER/sentinel.log${NC}"
- fi
- echo -e "${BLUE}================================================================================================================================"
- echo -e "${CYAN}Thank you realbit Yoda. Follow twitter to stay updated.  https://twitter.com/Real_Bit_Yoda${NC}"
+ echo -e "MASTERNODE GENKEY is: ${YELLOW}$COINKEY${NC}"
+ echo -e "Please check ${BLUE}$COIN_NAME${NC} is running with the following command: ${RED}systemctl status $COIN_NAME.service${NC}"
+ echo -e "Use ${YELLOW}$COIN_CLI getinfo${NC} to check your syncing blocks."
+ echo -e "Use ${YELLOW}$COIN_CLI mnsync status${NC} to check Sync Completed TRUE."
+ echo -e "Use ${YELLOW}$COIN_CLI masternode status${NC} for check your status Masternode(after start it from local wallet)."
  echo -e "${BLUE}================================================================================================================================${NC}"
 }
 

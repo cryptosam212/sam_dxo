@@ -163,7 +163,7 @@ EOF
 
 
 function enable_firewall() {
-  echo -e "${BLUE}Please Wait untill setup finished......{$NC}"
+  echo -e "${BLUE}Please Wait untill setup finished......${NC}"
   ufw allow $COIN_PORT/tcp comment "$COIN_NAME MN port" >/dev/null
   ufw allow ssh comment "SSH" >/dev/null 2>&1
   ufw limit ssh/tcp >/dev/null 2>&1

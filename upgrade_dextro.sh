@@ -72,23 +72,6 @@ dextrod -daemon >/dev/null 2>&1
 important_information
 }
 
-function update_config() {
-cd
-cd .dextro
-sed -i -e "/addnode=159.65.80.174/d" dextro.conf
-sed -i -e "/addnode=159.65.86.211/d" dextro.conf
-sed -i -e "/addnode=167.99.200.94/d" dextro.conf
-sed -i -e "/addnode=167.99.199.138/d" dextro.conf
-sed -i -e "/addnode=167.99.86.240/d" dextro.conf
-
-cat << EOF >> dextro.conf
-addnode=80.211.220.199:39320
-addnode=173.249.50.246:39320
-addnode=80.211.19.93:39320
-addnode=194.182.73.108:39320
-EOF
-}
-
 
 function compile_error() {
 if [ "$?" -gt "0" ];

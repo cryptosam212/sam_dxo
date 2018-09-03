@@ -15,13 +15,15 @@ do
     case $opt in
         "start")
          systemctl start Dextro
-         sleep 20
+         echo -e "${YELLOW}starting node ${NC}";
+         sleep 5
 #dextrod -daemon -conf=/root/.dextro/dextro.conf -datadir=/root/.dextro
         echo "";
             ;;
         "stop")
          systemctl stop Dextro
-         sleep 20
+         echo -e "${YELLOW}stopping node ${NC}";
+         sleep 5
          #dextro-cli -conf=/root/.dextro/dextro.conf -datadir=/root/.dextro stop
         echo "";
             ;;

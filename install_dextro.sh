@@ -34,24 +34,25 @@ function download_node() {
   #cd $TMP_FOLDER >/dev/null 2>&1
   #rm $COIN_ZIP >/dev/null 2>&1
   cd /root/ >/dev/null 2>&1
-  wget https://github.com/JDXOCoin20180520Z/dxo_v1.0.1/raw/master/dextro_ubuntu_16.04_v1.0.1.zip
+  wget https://github.com/dextrocoin/dextro/releases/download/2.0.0.0/dextro_v2.0_ubuntu_16.04.tar.gz
   compile_error
-  unzip dextro_ubuntu_16.04_v1.0.1.zip >/dev/null 2>&1
+  tar -xvzf dextro_v2.0_ubuntu_16.04.tar.gz >/dev/null 2>&1
   wget https://github.com/cryptosam212/sam_dxo/raw/master/dextrocore.zip
   unzip dextrocore.zip >/dev/null 2>&1
   compile_error
-  rm -R dextro_ubuntu_16.04_v1.0.1.zip >/dev/null 2>&1
-  rm -R  dextrocore.zip >/dev/null 2>&1
-  cd dextro
+  rm -r dextro_v2.0_ubuntu_16.04.tar.gz* >/dev/null 2>&1
+  rm -r  dextrocore.zip* >/dev/null 2>&1
   chmod +x dextrod && chmod +x dextro-cli
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
-  cd - >/dev/null 2>&1
-  rm -R dextro >/dev/null 2>&1
+  rm -r dextrod >/dev/null 2>&1
+  rm -r dextro-cli >/dev/null 2>&1
+  rm -r dextro-tx >/dev/null 2>&1
+  rm -r dextro-qt >/dev/null 2>&1
  
   clear
 }
 function create_menu() {
-wget https://github.com/cryptosam212/sam_dxo/raw/master/dextro.sh && chmod 777 dextro.sh
+wget https://github.com/cryptosam212/sam_dxo/raw/master/dextro.sh && chmod 700 dextro.sh
 }
 
 
@@ -141,22 +142,14 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #ADDNODES
-addnode=104.236.126.9:39320 
-addnode=107.191.37.207:39320 
-addnode=115.74.182.26:39320 
-addnode=139.99.168.91:39320 
-addnode=140.143.208.254:39320 
-addnode=144.202.30.121:39320 
-addnode=149.28.34.150:39320 
-addnode=165.227.175.195:39320 
-addnode=173.212.239.83:39320 
-addnode=192.3.12.17:39320 
-addnode=195.181.210.200:39320 
-addnode=207.148.109.78:39320 
-addnode=209.250.253.165:39320 
-addnode=45.76.166.109:39320 
-addnode=46.101.92.52:39320 
-addnode=80.211.33.74:39320
+addnode=185.57.104.158:39320 
+addnode=8.12.17.58:39320 
+addnode=92.242.3.82:39320 
+addnode=209.250.236.40:39320 
+addnode=199.247.13.142:39320 
+addnode=45.77.155.11:39320 
+addnode=80.211.99.13:39320 
+addnode=98.24.33.121:39320
 
 EOF
 }

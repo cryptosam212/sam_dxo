@@ -45,7 +45,7 @@ function download_node() {
  chmod +x $COIN_DAEMON $COIN_CLI >/dev/null 2>&1
   compile_error
   cp -r -p $COIN_DAEMON $COIN_CLI $COIN_PATH >/dev/null 2>&1
-  cd - >/dev/null 2>&1
+  cd  >/dev/null 2>&1
   rm -r dextrod >/dev/null 2>&1
   rm -r dextro-cli >/dev/null 2>&1
   rm -r dextro-tx >/dev/null 2>&1
@@ -54,16 +54,23 @@ function download_node() {
 
 cd .dextro
 
-echo "addnode=185.57.104.158:39320" >> dextro.conf
-echo "addnode=8.12.17.58:39320" >> dextro.conf
-#sed -i -e "/addnode=167.99.86.240/d" dextro.conf
 
-#cat << EOF >> dextro.conf
-#addnode=80.211.220.199:39320
-#addnode=173.249.50.246:39320
-#addnode=80.211.19.93:39320
-#addnode=194.182.73.108:39320
-#EOF
+cat << EOF >> dextro.conf
+addnode=185.57.104.158:39320 
+addnode=8.12.17.58:39320 
+addnode=5.189.171.202:39320 
+addnode=92.242.3.82:39320 
+addnode=209.250.236.40:39320 
+addnode=199.247.13.142:39320 
+addnode=45.77.155.11:39320 
+addnode=80.211.99.13:39320 
+addnode=98.24.33.121:39320 
+addnode=185.180.231.10:39320 
+addnode=139.99.97.156:39320 
+addnode=212.237.56.132:39320 
+addnode=209.250.226.6:39320 
+addnode=80.240.29.16:39320
+EOF
 
 
 systemctl stop Dextro.service >/dev/null 2>&1

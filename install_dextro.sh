@@ -114,7 +114,9 @@ rpcallowip=127.0.0.1
 listen=1
 server=1
 daemon=1
-port=$COIN_PORT
+staking=0
+logintimestamps=1
+maxconnections=256
 EOF
 }
 
@@ -142,8 +144,7 @@ clear
 
 function update_config() {
 cat << EOF >> $CONFIGFOLDER/$CONFIG_FILE
-logintimestamps=1
-maxconnections=256
+port=$COIN_PORT
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY

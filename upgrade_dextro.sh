@@ -79,8 +79,8 @@ compile_error
 rm -r dextrocore.zip* >/dev/null 2>&1
 
 echo -e "run daemon"
-systemctl start Dextro >/dev/null 2>&1
 sytemctl enable Dextro >/dev/null 2>&1
+systemctl start Dextro >/dev/null 2>&1
 
  echo -e "${BLUE}============================================================================================================================${NC}"
  echo -e "${PURPLE}UPGRADE COMPLETED ${NC}"

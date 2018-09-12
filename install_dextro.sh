@@ -44,9 +44,7 @@ function download_node() {
   rm dextro.sh >/dev/null 2>&1
   wget https://github.com/dextrocoin/dextro/releases/download/2.0.2.1/dextro-v2.0.2.1-ubuntu_16.tar.gz
   compile_error
-  tar -xvzf dextro-v2.0.2.1-ubuntu_16.tar.gz >/dev/null 2>&1
-  wget https://github.com/cryptosam212/sam_dxo/raw/master/dextrocore.zip
-  unzip dextrocore.zip >/dev/null 2>&1
+  tar -xvzf dextro-v2.0.2.1-ubuntu_16.tar.gz >/dev/null 2>&1 
   compile_error
   rm -r dextro-v2.0.2.1-ubuntu_16.tar.gz* >/dev/null 2>&1
   rm -r  dextrocore.zip* >/dev/null 2>&1
@@ -101,7 +99,16 @@ EOF
     exit 1
   fi
 }
+function update_block() {
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1ZaYxsFht6oa0blsYPbKmcZ1q3_udCnuf' -O- | sed -rn 's/.confirm=([0-9A-Za-z_]+)./\1\n/p')&id=1ZaYxsFht6oa0blsYPbKmcZ1q3_udCnuf" -O dextro_blockchain199605.zip && rm -rf /tmp/cookies.txt >/dev/null 2>&1
+unzip dextro_blockchain199605.zip  >/dev/null 2>&1
 
+dextro-cli stop
+rm -r .dextro/blocks/  >/dev/null 2>&1
+rm -r .dextro/chainstate/  >/dev/null 2>&1
+mv dextro_blockchain199605/blocks/ .dextro/  >/dev/null 2>&1
+mv dextro_blockchain199605/chainstate/ .dextro/  >/dev/null 2>&1
+}
 
 function create_config() {
   mkdir $CONFIGFOLDER >/dev/null 2>&1
@@ -273,6 +280,7 @@ function setup_node() {
   create_config
   create_key
   update_config
+  update_block
   enable_firewall
   configure_systemd
   create_menu

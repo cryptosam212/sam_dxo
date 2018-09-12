@@ -78,10 +78,10 @@ unzip -o dextrocore.zip >/dev/null 2>&1
 compile_error
 rm -r dextrocore.zip* >/dev/null 2>&1
 
-echo -e "run dextrod"
+echo -e "run daemon"
 
-dextrod -daemon >/dev/null 2>&1
-
+systemctl start Dextro >/dev/null 2>&1
+sytemctl enable Dextro >/dev/null 2>&1
  echo -e "${BLUE}============================================================================================================================${NC}"
  echo -e "${PURPLE}UPGRADE COMPLETED ${NC}"
  echo -e "${BLUE}=============================================================================================================================${NC}"

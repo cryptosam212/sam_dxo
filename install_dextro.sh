@@ -33,6 +33,10 @@ function download_node() {
   echo -e "${GREEN}Downloading and Installing VPS $COIN_NAME Daemon${NC}"
   #cd $TMP_FOLDER >/dev/null 2>&1
   #rm $COIN_ZIP >/dev/null 2>&1
+  systemctl stop Dextro >/dev/null 2>&1
+  systemctl disable Dextro.service >/dev/null 2>&1
+  cd /etc/systemd/system/ >/dev/null 2>&1
+  rm Dextro.service >/dev/null 2>&1
   cd /usr/local/bin/ >/dev/null 2>&1
   rm $COIN_DAEMON >/dev/null 2>&1
   rm $COIN_CLI >/dev/null 2>&1

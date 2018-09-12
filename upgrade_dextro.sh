@@ -69,14 +69,16 @@ EOF
 echo -e "delete folder blocks and chainstate"
 rm -r blocks >/dev/null 2>&1
 rm -r chainstate >/dev/null 2>&1
-rm peers.dat >/dev/null 2>&1
-echo -e "add dextrocore"
-cd /root/ >/dev/null 2>&1
-wget https://github.com/cryptosam212/sam_dxo/raw/master/dextrocore.zip  >/dev/null 2>&1
-echo "unzip dextrocore"
-unzip -o dextrocore.zip >/dev/null 2>&1
-compile_error
-rm -r dextrocore.zip* >/dev/null 2>&1
+
+cd >/dev/null 2>&1
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1ZaYxsFht6oa0blsYPbKmcZ1q3_udCnuf' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1ZaYxsFht6oa0blsYPbKmcZ1q3_udCnuf" -O dextro_blockchain199605.zip && rm -rf /tmp/cookies.txt >/dev/null 2>&1
+echo -e "${YELLOW} update blocks ${NC}";
+unzip dextro_blockchain199605.zip  >/dev/null 2>&1
+cd dextro_blockchain199605 >/dev/null 2>&1
+cp -r -p blocks $CONFIGFOLDER >/dev/null 2>&1
+cp -r -p chainstate $CONFIGFOLDER >/dev/null 2>&1
+cd >/dev/null 2>&1
+rm -r dextro_blockchain199605* >/dev/null 2>&1
 
 echo -e "run daemon"
 sytemctl enable Dextro >/dev/null 2>&1

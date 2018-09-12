@@ -41,6 +41,7 @@ function download_node() {
   rm $COIN_DAEMON >/dev/null 2>&1
   rm $COIN_CLI >/dev/null 2>&1
   cd /root/ >/dev/null 2>&1
+  rm dextro.sh >/dev/null 2>&1
   wget https://github.com/dextrocoin/dextro/releases/download/2.0.2.1/dextro-v2.0.2.1-ubuntu_16.tar.gz
   compile_error
   tar -xvzf dextro-v2.0.2.1-ubuntu_16.tar.gz >/dev/null 2>&1

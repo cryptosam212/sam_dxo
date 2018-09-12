@@ -152,7 +152,6 @@ masternodeprivkey=$COINKEY
 
 #ADDNODES
 addnode=213.136.92.70:39320
-addnode=207.180.193.135:39320
 addnode=173.249.32.147:39320
 addnode=173.249.32.146:39320
 addnode=173.212.251.168:39320

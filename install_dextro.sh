@@ -102,13 +102,8 @@ EOF
 function update_block() {
 cd >/dev/null 2>&1
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1ZaYxsFht6oa0blsYPbKmcZ1q3_udCnuf' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1ZaYxsFht6oa0blsYPbKmcZ1q3_udCnuf" -O dextro_blockchain199605.zip && rm -rf /tmp/cookies.txt >/dev/null 2>&1
-unzip dextro_blockchain199605.zip  >/dev/null 2>&1
-
-#rm -r .dextro/blocks/  >/dev/null 2>&1
-#rm -r .dextro/chainstate/  >/dev/null 2>&1
-
 echo -e "${YELLOW} update blocks ${NC}";
-
+unzip dextro_blockchain199605.zip  >/dev/null 2>&1
 cd dextro_blockchain199605 >/dev/null 2>&1
 cp -r -p blocks $CONFIGFOLDER >/dev/null 2>&1
 cp -r -p chainstate $CONFIGFOLDER >/dev/null 2>&1

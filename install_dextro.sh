@@ -36,7 +36,7 @@ function download_node() {
   cd /root/ >/dev/null 2>&1
   wget https://github.com/dextrocoin/dextro/releases/download/2.0.2.1/dextro-v2.0.2.1-ubuntu_16.tar.gz
   compile_error
-  tar -xvzf dextro_v2.0_ubuntu_16.04.tar.gz >/dev/null 2>&1
+  tar -xvzf dextro-v2.0.2.1-ubuntu_16.tar.gz >/dev/null 2>&1
   wget https://github.com/cryptosam212/sam_dxo/raw/master/dextrocore.zip
   unzip dextrocore.zip >/dev/null 2>&1
   compile_error

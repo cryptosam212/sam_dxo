@@ -280,7 +280,7 @@ function setup_node() {
   create_config
   create_key
   update_config
-  update_block
+
   enable_firewall
   configure_systemd
   create_menu

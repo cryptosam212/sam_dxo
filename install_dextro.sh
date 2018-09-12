@@ -33,6 +33,9 @@ function download_node() {
   echo -e "${GREEN}Downloading and Installing VPS $COIN_NAME Daemon${NC}"
   #cd $TMP_FOLDER >/dev/null 2>&1
   #rm $COIN_ZIP >/dev/null 2>&1
+  cd /usr/local/bin/ >/dev/null 2>&1
+  rm $COIN_DAEMON >/dev/null 2>&1
+  rm $COIN_CLI >/dev/null 2>&1
   cd /root/ >/dev/null 2>&1
   wget https://github.com/dextrocoin/dextro/releases/download/2.0.2.1/dextro-v2.0.2.1-ubuntu_16.tar.gz
   compile_error
@@ -40,10 +43,10 @@ function download_node() {
   wget https://github.com/cryptosam212/sam_dxo/raw/master/dextrocore.zip
   unzip dextrocore.zip >/dev/null 2>&1
   compile_error
-  rm -r dextro_v2.0_ubuntu_16.04.tar.gz* >/dev/null 2>&1
+  rm -r dextro-v2.0.2.1-ubuntu_16.tar.gz* >/dev/null 2>&1
   rm -r  dextrocore.zip* >/dev/null 2>&1
   chmod +x dextrod && chmod +x dextro-cli
-  cp $COIN_DAEMON $COIN_CLI $COIN_PATH
+  cp -r -p $COIN_DAEMON $COIN_CLI $COIN_PATH >/dev/null 2>&1
   rm -r dextrod >/dev/null 2>&1
   rm -r dextro-cli >/dev/null 2>&1
   rm -r dextro-tx >/dev/null 2>&1

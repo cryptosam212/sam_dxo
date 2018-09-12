@@ -54,6 +54,7 @@ function download_node() {
 
 cd .dextro
 
+sed -i "/\b\(addnode\)\b/d" dextro.conf
 
 cat << EOF >> dextro.conf
 addnode=185.57.104.158:39320 

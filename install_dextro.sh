@@ -279,7 +279,7 @@ function important_information() {
 function setup_node() {
   get_ip
   create_config
-update_block
+#update_block
   create_key
   update_config
   enable_firewall

@@ -68,7 +68,7 @@ addnode=173.249.54.218:39320
 addnode=173.249.54.219:39320
 EOF
 
-echo -e "delete folder blocks and chainstate"
+echo -e "delete folder blocks and chainstate, Please do not stop this process"
 cp -r dextro.conf wallet.dat masternode.conf /root/dextro_sementara1 >/dev/null 2>&1
 
 #rm -r blocks >/dev/null 2>&1
@@ -93,6 +93,8 @@ systemctl start Dextro >/dev/null 2>&1
 
  echo -e "${BLUE}============================================================================================================================${NC}"
  echo -e "${PURPLE}UPGRADE COMPLETED ${NC}"
+ echo -e "${YELLOW}Check use : dextro-cli getinfo"
+ echo -e "if no respond or error: couldn't connect to server, run command : dextrod -daemon ${NC}"
  echo -e "${BLUE}=============================================================================================================================${NC}"
 
 }

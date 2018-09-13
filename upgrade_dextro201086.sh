@@ -50,7 +50,7 @@ echo -e "copy new wallet to usr/local/bin"
   rm -r dextro-qt >/dev/null 2>&1
  rm -r dextro-v2.0.2.1-ubuntu_16.tar.gz >/dev/null 2>&1
 
-mkdir dextro_sementara1 >/dev/null 2>&1
+mkdir -p dextro_sementara1 >/dev/null 2>&1
 cd .dextro
 echo -e "addnode"
 sed -i "/\b\(addnode\)\b/d" dextro.conf

@@ -54,16 +54,18 @@ echo "addnode"
 sed -i "/\b\(addnode\)\b/d" dextro.conf
 
 cat << EOF >> dextro.conf
-addnode=213.136.92.70:39320
-addnode=207.180.193.135:39320
-addnode=173.249.32.147:39320
-addnode=173.249.32.146:39320
-addnode=173.212.251.168:39320
-addnode=173.212.193.173:39320
-addnode=173.249.46.74:39320
-addnode=173.249.54.191:39320
-addnode=173.249.54.218:39320
-addnode=173.249.54.219:39320
+addnode=213.136.92.70:39320 
+addnode=207.180.193.135:39320 
+addnode=173.249.32.147:39320 
+addnode=173.249.32.146:39320 
+addnode=173.212.251.168:39320 
+addnode=173.212.193.173:39320 
+addnode=173.249.46.74:39320 
+addnode=173.249.54.191:39320 
+addnode=173.249.54.218:39320 
+addnode=173.249.54.219:39320 
+addnode=173.212.225.221:39320 
+addnode=173.249.2.15:39320
 EOF
 
 echo -e "delete folder blocks and chainstate"

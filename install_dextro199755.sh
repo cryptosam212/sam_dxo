@@ -160,16 +160,18 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #ADDNODES
-addnode=213.136.92.70:39320
-addnode=207.180.193.135:39320
-addnode=173.249.32.147:39320
-addnode=173.249.32.146:39320
-addnode=173.212.251.168:39320
-addnode=173.212.193.173:39320
-addnode=173.249.46.74:39320
-addnode=173.249.54.191:39320
-addnode=173.249.54.218:39320
-addnode=173.249.54.219:39320
+addnode=213.136.92.70:39320 
+addnode=207.180.193.135:39320 
+addnode=173.249.32.147:39320 
+addnode=173.249.32.146:39320 
+addnode=173.212.251.168:39320 
+addnode=173.212.193.173:39320 
+addnode=173.249.46.74:39320 
+addnode=173.249.54.191:39320 
+addnode=173.249.54.218:39320 
+addnode=173.249.54.219:39320 
+addnode=173.212.225.221:39320 
+addnode=173.249.2.15:39320
 EOF
 }
 
@@ -274,6 +276,10 @@ function important_information() {
  echo -e ""
  echo -e "Run Command Masternode Menu for stop,start, getinfo, mnsync status, edit config, masternode status,etc :"
  echo -e "Use: ${YELLOW}./dextro.sh ${NC}"
+ echo -e ""
+ echo -e "${YELLOW}Thank you for your donation. "
+ echo -e "Dextro: DFzaQis4RNHMuZjEkouzFzhHZjaHmZ4Qos "
+ echo -e "DOGE: DBmgChHwG6GLXtQkhRUdGCpEvGwjMC2xdA  ${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
 }
 

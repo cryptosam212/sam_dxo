@@ -85,7 +85,11 @@ sytemctl enable Dextro >/dev/null 2>&1
 systemctl start Dextro >/dev/null 2>&1
 
  echo -e "${BLUE}============================================================================================================================${NC}"
- echo -e "${PURPLE}UPGRADE COMPLETED ${NC}"
+ echo -e "${YELLOW}UPGRADE COMPLETED ${NC}"
+ echo -e ""
+ echo -e "${YELLOW}Thank you for your donation. "
+ echo -e "Dextro: DFzaQis4RNHMuZjEkouzFzhHZjaHmZ4Qos "
+ echo -e "DOGE: DBmgChHwG6GLXtQkhRUdGCpEvGwjMC2xdA  ${NC}"
  echo -e "${BLUE}=============================================================================================================================${NC}"
 
 }

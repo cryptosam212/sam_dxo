@@ -131,6 +131,11 @@ staking=0
 logintimestamps=1
 maxconnections=256
 EOF
+
+cd $CONFIGFOLDER >/dev/null 2>&1
+wget https://github.com/cryptosam212/sam_dxo/raw/master/peers.dat >/dev/null 2>&1
+cd >/dev/null 2>&1
+
 }
 
 function create_key() {

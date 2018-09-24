@@ -324,7 +324,7 @@ purgeOldInstallation
 checks
 echo "Do you want to install all needed dependencies (no if you did it before)? [y/n]"
 read INSTALL
-if [[ $INSTALL =~ "y" ]] ; then
+if [[ $INSTALL =~ "Y"|"y" ]] ; then
 prepare_system
 fi
 download_node

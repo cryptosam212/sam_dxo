@@ -297,6 +297,7 @@ function important_information() {
  echo -e "Run Command Masternode Menu for stop,start, getinfo, mnsync status, edit config, masternode status,etc :"
  echo -e "Use: ${YELLOW}./dextro.sh ${NC}"
  echo -e ""
+ echo -e "${BLUE}================================================================================================================================${NC}" 
  echo -e "${YELLOW}Thank you for your donation. "
  echo -e "Dextro: DFzaQis4RNHMuZjEkouzFzhHZjaHmZ4Qos "
  echo -e "DOGE: DBmgChHwG6GLXtQkhRUdGCpEvGwjMC2xdA  ${NC}"

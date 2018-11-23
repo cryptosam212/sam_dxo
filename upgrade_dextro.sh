@@ -49,7 +49,7 @@ rm -r dextrocore.zip*  >/dev/null 2>&1
  rm -r dextro-v2.0.2.1-ubuntu_16* >/dev/null 2>&1
 echo -e "${NC}download new wallet"
 
- wget https://github.com/dextrocoin/dextro/releases/download/2.0.2.2/dextro_v2.0.2.2_ubuntu_16.tar.gz >/dev/null 2>&1
+ wget -c https://github.com/dextrocoin/dextro/releases/download/2.0.2.2/dextro_v2.0.2.2_ubuntu_16.tar.gz >/dev/null 2>&1
   compile_error
   tar -xvzf dextro_v2.0.2.2_ubuntu_16.tar.gz >/dev/null 2>&1
 
@@ -103,7 +103,7 @@ rm mnpayments.dat
 #cd >/dev/null 2>&1
 
 #wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1scXN9ksZ7xJnlLYhDlNSLSH8pPvM_7zG' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1scXN9ksZ7xJnlLYhDlNSLSH8pPvM_7zG" -O dextro_blockchain201086.zip && rm -rf /tmp/cookies.txt >/dev/null 2>&1
-wget https://github.com/dextrocoin/dextro/releases/download/2.0.2.2/dextro_v2.0.2.2_blocks_302741.zip >/dev/null 2>&1
+wget -c https://github.com/dextrocoin/dextro/releases/download/2.0.2.2/dextro_v2.0.2.2_blocks_302741.zip >/dev/null 2>&1
 echo -e "${YELLOW} update blocks ${NC}";
 unzip dextro_v2.0.2.2_blocks_302741.zip  >/dev/null 2>&1
 #cd dextro_blockchain201086 >/dev/null 2>&1

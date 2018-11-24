@@ -42,18 +42,16 @@ function download_node() {
   rm $COIN_CLI >/dev/null 2>&1
   cd /root/ >/dev/null 2>&1
   rm dextro.sh >/dev/null 2>&1
-  wget https://github.com/dextrocoin/dextro/releases/download/2.0.2.1/dextro-v2.0.2.1-ubuntu_16.tar.gz
+  wget -c https://github.com/dextrocoin/dextro/releases/download/2.0.2.2/dextro_v2.0.2.2_ubuntu_16.tar.gz
   compile_error
-  tar -xvzf dextro-v2.0.2.1-ubuntu_16.tar.gz >/dev/null 2>&1 
+  tar -xvzf dextro_v2.0.2.2_ubuntu_16.tar.gz >/dev/null 2>&1 
   compile_error
-  rm -r dextro-v2.0.2.1-ubuntu_16.tar.gz* >/dev/null 2>&1
-  rm -r  dextrocore.zip* >/dev/null 2>&1
+  rm -r dextro_v2.0.2.2_ubuntu_16.tar* >/dev/null 2>&1
   chmod +x dextrod && chmod +x dextro-cli
   cp -r -p $COIN_DAEMON $COIN_CLI $COIN_PATH >/dev/null 2>&1
   rm -r dextrod >/dev/null 2>&1
   rm -r dextro-cli >/dev/null 2>&1
-  rm -r dextro-tx >/dev/null 2>&1
-  rm -r dextro-qt >/dev/null 2>&1
+  
  
   clear
 }
@@ -102,17 +100,15 @@ EOF
   fi
 }
 function update_block() {
-cd >/dev/null 2>&1
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1scXN9ksZ7xJnlLYhDlNSLSH8pPvM_7zG' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1scXN9ksZ7xJnlLYhDlNSLSH8pPvM_7zG" -O dextro_blockchain201086.zip && rm -rf /tmp/cookies.txt >/dev/null 2>&1
+cd $CONFIGFOLDER >/dev/null 2>&1
+wget -c https://github.com/dextrocoin/dextro/releases/download/2.0.2.2/dextro_v2.0.2.2_blocks_302741.zip >/dev/null 2>&1
  compile_error
 echo -e "${YELLOW} update blocks ${NC}";
-unzip dextro_blockchain201086.zip  >/dev/null 2>&1
+unzip dextro_v2.0.2.2_blocks_302741.zip  >/dev/null 2>&1
  compile_error
-cd dextro_blockchain201086 >/dev/null 2>&1
-cp -r -p blocks $CONFIGFOLDER >/dev/null 2>&1
-cp -r -p chainstate $CONFIGFOLDER >/dev/null 2>&1
+rm -r dextro_v2.0.2.2_blocks_302741* >/dev/null 2>&1
 cd >/dev/null 2>&1
-rm -r dextro_blockchain201086* >/dev/null 2>&1
+
 }
 
 function create_config() {
@@ -133,9 +129,10 @@ maxconnections=256
 EOF
 
 cd $CONFIGFOLDER >/dev/null 2>&1
-wget https://github.com/cryptosam212/sam_dxo/raw/master/peers.dat >/dev/null 2>&1
+wget -c https://github.com/dextrocoin/dextro/releases/download/2.0.2.2/peers.zip >/dev/null 2>&1
+unzip peers.zip >/dev/null 2>&1
+rm peers.zip
 cd >/dev/null 2>&1
-
 }
 
 function create_key() {
@@ -169,18 +166,22 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #ADDNODES
-addnode=213.136.92.70:39320 
-addnode=207.180.193.135:39320 
-addnode=173.249.32.147:39320 
-addnode=173.249.32.146:39320 
-addnode=173.212.251.168:39320 
-addnode=173.212.193.173:39320 
-addnode=173.249.46.74:39320 
-addnode=173.249.54.191:39320 
-addnode=173.249.54.218:39320 
-addnode=173.249.54.219:39320 
-addnode=173.212.225.221:39320 
-addnode=173.249.2.15:39320
+addnode=207.180.213.15:39320
+addnode=207.180.213.19:39320
+addnode=5.189.139.75:39320
+addnode=207.180.199.86:39320 
+addnode=207.180.212.96:39320 
+addnode=207.180.212.101:39320
+addnode=173.212.206.227:39320
+addnode=207.180.217.56:39320
+addnode=207.180.217.57:39320
+addnode=207.180.217.58:39320
+addnode=207.180.217.59:39320
+addnode=177.152.49.150
+addnode=177.152.49.151
+addnode=177.152.49.152
+addnode=177.152.49.153
+addnode=177.152.49.154
 EOF
 }
 

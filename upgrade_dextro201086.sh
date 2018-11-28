@@ -79,6 +79,7 @@ rm -r /root/.dextro/* >/dev/null 2>&1
 cd >/dev/null 2>&1
 cp -r /root/dextro_sementara1/* /root/.dextro >/dev/null 2>&1
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1scXN9ksZ7xJnlLYhDlNSLSH8pPvM_7zG' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1scXN9ksZ7xJnlLYhDlNSLSH8pPvM_7zG" -O dextro_blockchain201086.zip && rm -rf /tmp/cookies.txt >/dev/null 2>&1
+#wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1za-ptqGy23GVe1pVfIn4WrQ886xUBR4e' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1za-ptqGy23GVe1pVfIn4WrQ886xUBR4e" -O dextro_309200.zip && rm -rf /tmp/cookies.txt
 echo -e "${YELLOW} update blocks ${NC}";
 unzip dextro_blockchain201086.zip  >/dev/null 2>&1
 cd dextro_blockchain201086 >/dev/null 2>&1

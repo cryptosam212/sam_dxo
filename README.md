@@ -55,8 +55,8 @@ You can subscribe VPS from provider like Vultr (stable and cheap host), or other
 
 Register an account Vultr, then click on "+" button from the dashboard
 
-Select any 'Server Location' follow by Ubuntu 16.04 x64 for 'Server Type' and $5/mo with 25 GB SSD for 'Server Size' (we also can use $2.5/mo with 20 GB SSD)
-Don't choose IPv6 only
+Select any 'Server Location' follow by Ubuntu 16.04 x64 for 'Server Type' and $5/mo with 25 GB SSD for 'Server Size'
+
 
 Leave 'Additional Features' optins uncheck
 Enter a Hostname and Label for your VPS (for example, Dextro)

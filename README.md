@@ -127,17 +127,6 @@ Congratulations, your masternode has been activated and running. Just wait for y
 
 
 
-CentOS64	PHP	MySql	Rapid SSL
 
-Exchanges
-Graviex
-Wallets and Source
-Webwallet
-Download Wallets
-How to use DXO?
-Host a MN service
-DXO MN Setup Guide
-Add a coin with us!
-Coin Specs
-FAQ
-Copyright 2018 Dextro.io
+
+

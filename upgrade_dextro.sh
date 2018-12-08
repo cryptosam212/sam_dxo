@@ -161,7 +161,7 @@ fi
 function compile_error() {
 if [ "$?" -gt "0" ];
  then
-  echo -e "${RED}Failed to compile $COIN_NAME. Please investigate.${NC}"
+  echo -e "${RED}Failed to download wallet file.${NC}"
   exit 1
 fi
 }

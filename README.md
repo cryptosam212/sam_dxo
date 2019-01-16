@@ -1,4 +1,4 @@
-# sam_dxo
+# Dextro Masternode guide
 
 <h2>Requirements</h2>
 				<ul>

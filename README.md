@@ -18,7 +18,7 @@
 					Install and run the dextro-qt wallet  on your Windows machine
 				  </li>
 				</ol></h3>
-					<li>Download the latest wallet <a href="https://github.com/dextrocoin/dextro/releases/download/1.0.1.1/dextro_windows_v1_0_1_1_32_bit.zip" target="_blank">download wallet win 32 bit</a>  	  or  <a href="https://github.com/dextrocoin/dextro/releases/download/1.0.1.1/dextro_windows_v1_0_1_1_64_bit.zip" target="_blank">download wallet win 64 bit</a><br>
+					<li>Download DEXTRO the latest wallet at <a href="https://github.com/dextrocoin/dextro/releases/tag/2.0.2.3" target="_blank">https://github.com/dextrocoin/dextro/releases/tag/2.0.2.3</a><br>
 					</li>
 					<li>Extract wallet </li>
 					<li>Double  click on <strong>dextro-qt</strong> to install wallet</li>

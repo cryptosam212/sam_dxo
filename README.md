@@ -26,8 +26,7 @@
 					<li>If  you first time run the wallet, a pop-up screen will prompt for Data Directory.  By default, it will store in AppData\roaming\dextro directory.</li>
 					<li>Let  the wallet sync until you see the tick symbol on the right bottom</li>
 					<p><img src="http://dextro.io/images/wallet1.png" width="1000px" style="margin:10px"></p>
-					
-				<h3><ol start="2">
+					<h3><ol start="2">
 				  <li>
 				   Create a wallet address and send DXO coin to the address for your MasterNode collateral.
 				  </li>

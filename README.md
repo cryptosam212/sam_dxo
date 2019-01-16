@@ -89,9 +89,7 @@
 					<li>Register an account Vultr, then click on &quot;+&quot; button from the dashboard<br>
 					<img src="http://dextro.io/images/vultr1.png" width="800px" style="margin:10px">
 					</li>
-					<li>Select any 'Server Location' follow by Ubuntu 16.04 x64 for 'Server Type' and $5/mo with 25 GB SSD for 'Server Size' (we also can use 
-					$2.5/mo with 20 GB SSD)<br>
-				<strong style="color:#FF0000">Don't choose IPv6 only</strong><br>
+					<li>Select any 'Server Location' follow by Ubuntu 16.04 x64 for 'Server Type' and $5/mo with 25 GB SSD for 'Server Size' <br>
 				<img src="http://dextro.io/images/vultr2.png" width="800px" style="margin:10px">
 				</li>
 					<li>Leave 'Additional Features' optins uncheck</li>

@@ -3,7 +3,7 @@
 <h2>Requirements</h2>
 				<ul>
 				  <li>Windows 7 or higher (as your Cold wallet)</li>
-				  <li>Linux VPS (Ubuntu 16.04 64 bit) that running 24/7 such as <a href="https://www.vultr.com/?ref=7426137" rel="nofollow" target="_blank">Vultr (stable and cheap host)</a>, or other VPS provider (as your Hot wallet)</li>
+				  <li>Linux VPS (Ubuntu 16.04 64 bit) that running 24/7 such as <a href="https://www.vultr.com/?ref=7426137" rel="nofollow" target="top">Vultr (stable and cheap host)</a>, or other VPS provider (as your Hot wallet)</li>
 				  <li>SSH client, to connect to Linux VPS. Recommend <a href="https://putty.org" rel="nofollow" target="_blank">PuTTY</a></li>
 				</ul>
 				<h2 style="color: #25499A">Part 1: Windows Cold Wallet Installation</h2>
@@ -18,7 +18,7 @@
 					Install and run the dextro-qt wallet  on your Windows machine
 				  </li>
 				</ol></h3>
-					<li>Download the latest wallet <a href="https://github.com/dextrocoin/dextro/releases/download/1.0.1.1/dextro_windows_v1_0_1_1_32_bit.zip">download wallet win 32 bit</a>  	  or  <a href="https://github.com/dextrocoin/dextro/releases/download/1.0.1.1/dextro_windows_v1_0_1_1_64_bit.zip" target="_blank">download wallet win 64 bit</a><br>
+					<li>Download the latest wallet <a href="https://github.com/dextrocoin/dextro/releases/download/1.0.1.1/dextro_windows_v1_0_1_1_32_bit.zip" target="_blank">download wallet win 32 bit</a>  	  or  <a href="https://github.com/dextrocoin/dextro/releases/download/1.0.1.1/dextro_windows_v1_0_1_1_64_bit.zip" target="_blank">download wallet win 64 bit</a><br>
 					</li>
 					<li>Extract wallet </li>
 					<li>Double  click on <strong>dextro-qt</strong> to install wallet</li>
@@ -154,34 +154,34 @@
 				  </li>
 				</ol></h3>
 
-				<h2 style="color: #25499A">Part 4: Masternode Activation</h2>
+<h2 style="color: #25499A">Part 4: Masternode Activation</h2>
 				<ol>
 				  <h3><li>Enable Masternode</li></h3>
 				  Restart your Windows Cold Wallet. From the top menu, go to Tools -&gt; Debug console<br>
 				to acivate masternode, use command <strong>masternode start-alias MN_ALIAS</strong><br><br>
 
-				<span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px">masternode start-alias MN1</span>
+<span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px">masternode start-alias MN1</span>
 				<br>
-				<img src="images/start-masternode.png" width="600px" style="margin:10px"><br><br>
+				<img src="http://dextro.io/images/start-masternode.png" width="600px" style="margin:10px"><br><br>
 				if successfull we shown like this<br>
-				<img src="images/start-masternode2.png" width="600px" style="margin:10px"><br><br>
+				<img src="http://dextro.io/images/start-masternode2.png" width="600px" style="margin:10px"><br><br>
 				check at masternode tab and click update status for get newest status<br>
-				<img src="images/start-masternode2a.png" width="600px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/start-masternode2a.png" width="600px" style="margin:10px"><br>
 				if status enable, your masternode already activated. Check next 10minutes for active time must change forward.
 				<br>
 
-				  <h3><li>Check your MasterNode is enabled on VPS</li></h3>
+<h3><li>Check your MasterNode is enabled on VPS</li></h3>
 				  <ol type="a">
 				  <li>Check Mnsync status for check sync completed. <br><br>
 				  <span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px;">dextro-cli mnsync status</span> <br><br>
 				and report must contain  "IsBlockchainSynced" : true,<br><br>
 				<br>
 
-				</li>
+</li>
 				<li>if already synced, check masternode status with :<br><br>
 				<span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px">dextro-cli masternode status</span><br>
 				<br>
-				<img src="images/start-masternode3.png" width="600px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/start-masternode3.png" width="600px" style="margin:10px"><br>
 				report contain "status" : "Masternode successfully started"
 				</li>
 				  </ol>

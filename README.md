@@ -18,8 +18,6 @@
 					Install and run the dextro-qt wallet  on your Windows machine
 				  </li>
 				</ol></h3>
-				<ol>
-				  <ol type="a">
 					<li>Download the latest wallet <a href="https://github.com/dextrocoin/dextro/releases/download/1.0.1.1/dextro_windows_v1_0_1_1_32_bit.zip">download wallet win 32 bit</a>  	  or  <a href="https://github.com/dextrocoin/dextro/releases/download/1.0.1.1/dextro_windows_v1_0_1_1_64_bit.zip" target="_blank">download wallet win 64 bit</a><br>
 					</li>
 					<li>Extract wallet </li>
@@ -27,10 +25,8 @@
 					<li>Click  &quot;Yes&quot; button if you get 'unknown publisher' warning to continue</li>
 					<li>If  you first time run the wallet, a pop-up screen will prompt for Data Directory.  By default, it will store in AppData\roaming\dextro directory.</li>
 					<li>Let  the wallet sync until you see the tick symbol on the right bottom</li>
-					<p><img src="images/wallet1.png" width="1000px" style="margin:10px"></p>
+					<p><img src="http://dextro.io/images/wallet1.png" width="1000px" style="margin:10px"></p>
 					
-				  </ol>
-				</ol>
 				<h3><ol start="2">
 				  <li>
 				   Create a wallet address and send DXO coin to the address for your MasterNode collateral.

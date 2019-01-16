@@ -35,7 +35,7 @@
 				  <ol type="a">
 					<li>From  the top menu, go to <strong>File</strong> -&gt;  Receiving addresses</li>
 					<li>Click  on &quot;<strong>New</strong>&quot; button, enter a  label (for example, MN1) and click on &quot;OK&quot; button<br>
-					<img src="images/wallet2.jpg" width="1000px" style="margin:10px">
+					<img src="http://dextro.io/images/wallet2.jpg" width="1000px" style="margin:10px">
 					</li>
 					<li>Select on the newly created wallet address from the list and then click on "Copy" button to copy the address into the clipboard</li>
 					<li>Send exactly 2,000 DXO coins to the address that you just copied. Ensure the address is correct before you send out the coin.</li>
@@ -43,23 +43,23 @@
 				  </ol>
 				</ol>
 
-				<h3><ol start="3">
-				  <li>Obtain MasterNode private key and transaction of the collateral transfer information.
-				  </li>
-				</ol></h3>
-				<ol>
-				  <ol type="a">
+<h3><ol start="3">
+	  <li>Obtain MasterNode private key and transaction of the collateral transfer information.
+ </li>
+</ol></h3>
+<ol>
+  <ol type="a">
 					<li>From the top menu, go to Tools -&gt;Debug console</li>
 					<li style=" margin-bottom:20px">
 					Run the following command: <span style="background-color: #86BBE1; padding:3px 5px 3px 5px"><strong>masternode genkey</strong></span>
 					<br>
-				<img src="images/wallet3.jpg" width="1000px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/wallet3.jpg" width="1000px" style="margin:10px"><br>
 					A long  private key will be displayed (example as per below) and required for both Windows  wallet masternode config and Dextro Platform configuration later on:
 					<br>
 				<span style="font-size:20px; background-color:#86BBE1; padding:3px 5px 3px 5px; margin-left:10px"><strong>6K4Qop71Cs9sV5KoszVi9wCXXoXU2LHGdBNoeQrAose3TWEkTXc</strong></span>
 					</li>
 					<li>Continue to run following command:   <span style="font-size:16px; background-color:#86BBE1; padding:3px 5px 3px 5px; font-weight:bold">masternode outputs</span><br>
-				<img src="images/wallet4.jpg" width="1000px" style="margin:10px">
+				<img src="http://dextro.io/images/wallet4.jpg" width="1000px" style="margin:10px">
 				<br>
 					  <p><strong>NOTE:</strong> In case your masternode outputs is  BLANK, it could be you may not sent EXACTLY 2,000 DXO in a single transaction. So, you can send again exactly 2,000 DXO to address MN1</p>
 					</li>
@@ -69,7 +69,7 @@
 					  Tools -&gt; Open Masternode Configuration File.
 					  <br>
 					Fill masternode code at new line like this <br>
-				<img src="images/masternode_config.jpg" width="1000px" style="margin:10px"></li>
+				<img src="http://dextro.io/images/masternode_config.jpg" width="1000px" style="margin:10px"></li>
 				  </ol>
 				</ol>
 				<p>&nbsp;</p>
@@ -85,21 +85,21 @@
 				<p>You can subscribe VPS from provider like <a href="https://www.vultr.com/?ref=7426137" rel="nofollow" target="_blank">Vultr (stable and cheap host)</a>, or other similar providers with following requirements;</p>
 
 
-				  <ol type="a">
+<ol type="a">
 					<li>Register an account Vultr, then click on &quot;+&quot; button from the dashboard<br>
-					<img src="images/vultr1.png" width="800px" style="margin:10px">
+					<img src="http://dextro.io/images/vultr1.png" width="800px" style="margin:10px">
 					</li>
 					<li>Select any 'Server Location' follow by Ubuntu 16.04 x64 for 'Server Type' and $5/mo with 25 GB SSD for 'Server Size' (we also can use 
 					$2.5/mo with 20 GB SSD)<br>
 				<strong style="color:#FF0000">Don't choose IPv6 only</strong><br>
-				<img src="images/vultr2.png" width="800px" style="margin:10px">
+				<img src="http://dextro.io/images/vultr2.png" width="800px" style="margin:10px">
 				</li>
 					<li>Leave 'Additional Features' optins uncheck</li>
 					<li>Enter a Hostname and Label for your VPS (for example, Dextro)<br>
-				<img src="images/vultr3.png" width="800px" style="margin:10px">
+				<img src="http://dextro.io/images/vultr3.png" width="800px" style="margin:10px">
 				</li>
 					<li>After successfully install the VPS, click on the server from the list to get and copy <strong>IP Address</strong> and <strong>root's Password</strong><br>
-				<img src="images/vultr4.png" width="800px" style="margin:10px"></li>
+				<img src="http://dextro.io/images/vultr4.png" width="800px" style="margin:10px"></li>
 				  </ol>
 				  </ol>
 				<h2 style="color: #25499A">Part 3: Linux (Ubuntu) Hot Wallet Installation</h2>
@@ -109,18 +109,18 @@
 				  <li>You may use SSH client to connect the VPS. Recommend <a href="https://putty.org" rel="nofollow" target="_blank">PuTTY</a></li>
 				</ul>
 
-				<h3><ol>
+<h3><ol>
 				  <li>
 					Launch PuTTY application and login into VPS. Copy VPS IP Address and click open.<br>
-				<img src="images/putty1.png" width="500px" style="margin:10px">
+				<img src="http://dextro.io/images/putty1.png" width="500px" style="margin:10px">
 				<br>
-				<img src="images/putty1a.png" width="500px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/putty1a.png" width="500px" style="margin:10px"><br>
 				<br>
 				Login as root. Copy VPS Password and paste it into PuTTY (mouse right click to paste. Password not shown and press Enter)<br>
-				<img src="images/putty2.png" width="600px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/putty2.png" width="600px" style="margin:10px"><br>
 				<br>
 
-				  </li>
+</li>
 				  <li>
 				  copy and paste this below code into putty<br>
 				  <br>
@@ -128,28 +128,28 @@
 				<li>
 				<span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px">wget https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/install_dextro.sh</span><br>
 				<br>
-				<img src="images/putty3.png" width="600px" style="margin:10px"><br><br>
+				<img src="http://dextro.io/images/putty3.png" width="600px" style="margin:10px"><br><br>
 				</li>
 				<li>
 				<span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px">bash install_dextro.sh</span><br>
-				<img src="images/putty4.png" width="600px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/putty4.png" width="600px" style="margin:10px"><br>
 				<br>
 
-				</li>
+</li>
 				</ol>
 				  </li>
 				  <li>
 				  Wait and follow the installing<br>
-				<img src="images/putty5.png" width="600px" style="margin:10px"><br>
-				<img src="images/putty6.png" width="600px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/putty5.png" width="600px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/putty6.png" width="600px" style="margin:10px"><br>
 				  </li>
 				<li>
 				  copy and paste your private key that generated<br>
-				<img src="images/putty7.png" width="600px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/putty7.png" width="600px" style="margin:10px"><br>
 				Press Enter to continue<br>
-				<img src="images/putty8.png" width="600px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/putty8.png" width="600px" style="margin:10px"><br>
 				If your setup is finish you will see screen like below image<br>
-				<img src="images/putty9.png" width="600px" style="margin:10px"><br>
+				<img src="http://dextro.io/images/putty9.png" width="600px" style="margin:10px"><br>
 				Congratulations..... Your Dextro Masternode setup VPS was done
 				  </li>
 				</ol></h3>

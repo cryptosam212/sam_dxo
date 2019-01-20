@@ -95,7 +95,7 @@
 						
 </li>
 					<li>Select any 'Server Location' follow by Ubuntu 16.04 x64 for 'Server Type' and $5/mo with 25 GB SSD for 'Server Size' <br>
-				<img src="http://dextro.io/images/vultr2.png" width="800px" style="margin:10px">
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/vultr2.png" width="800px" style="margin:10px">
 				</li>
 					<li>Enter a Hostname and Label for your VPS (for example, Dextro)<br>
 				<img src="http://dextro.io/images/vultr3.png" width="800px" style="margin:10px">

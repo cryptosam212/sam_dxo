@@ -574,10 +574,10 @@ do
 echo "Script for masternode $COIN_NAME1"
 echo "1 - Create new nodes"
 echo "2 - Delete an existing node"
-echo "3 - Upgrade to Wallet $WALLET_VER or repair an existing node"
+#echo "3 - Upgrade to Wallet $WALLET_VER or repair an existing node"
 echo "4 - Add 4GB SWAP Memory to VPS"
 #echo "5 - Create new nodes for IPv6 (Use this option if IPv4 already maximum and your vps has IPv6)"
-echo "9 - clean old bootstrap file"
+#echo "9 - clean old bootstrap file"
 echo "10 - Create Menu for Masternode"
 echo "99 - EXIT script"
 echo ""
@@ -688,7 +688,7 @@ echo ""
 fi
  fi
 
- if [ $PILIH = "3" ]
+ if [ $PILIH = "33333333333" ]
 then
 echo -e "Choose Upgrade Wallet $WALLET_VER or Repair existing Node"
 echo -e "${YELLOW}List of installed $COIN_NAME1 Masternode${NC}"

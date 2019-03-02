@@ -45,11 +45,11 @@ cd $COIN_PATH >/dev/null 2>&1
  
  cd /root/ >/dev/null 2>&1
 
-  wget -c https://github.com/dextrocoin/dextro/releases/download/2.0.2.3/dextro_v2.0.2.3_ubuntu_16.tar.gz >/dev/null 2>&1
+  wget -c https://github.com/dextrocoin/dextro/releases/download/3.0.0.0/dextro_v3.0.0.0_linux.tar.gz >/dev/null 2>&1
   compile_error
-  tar -xvzf dextro_v2.0.2.3_ubuntu_16.tar.gz >/dev/null 2>&1 
+  tar -xvzf dextro_v3.0.0.0_linux.tar.gz >/dev/null 2>&1 
   compile_error
-  rm -r dextro_v2.0.2.3_ubuntu_16.tar.gz* >/dev/null 2>&1
+  rm -r dextro_v3.0.0.0_linux.tar.gz* >/dev/null 2>&1
   chmod +x dextrod && chmod +x dextro-cli
   cp -r -p $COIN_DAEMON $COIN_CLI $COIN_PATH >/dev/null 2>&1
   rm -r dextrod >/dev/null 2>&1

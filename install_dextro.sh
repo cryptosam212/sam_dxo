@@ -132,12 +132,12 @@ EOF
 function snapshot_sync() 
 {
 cd  >/dev/null 2>&1
-if [ ! -f dextro_blocks.zip ]
+if [ -f dextro_blocks.zip ]
 then
-rm dextro_blocks.zip
+echo "delete old bootstrap file"
+rm dextro_blocks.zip >/dev/null 2>&1
 fi
-echo -e "Setup snapshot bootstrap, please wait untill finished"
-
+echo "Setup snapshot bootstrap, please wait untill finished"
 wget -c https://github.com/dextrocoin/dextro/releases/download/3.0.0.0/dextro_blocks.zip >/dev/null 2>&1
 compile_error
 echo -e "bootstrap successful downloaded"

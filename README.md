@@ -9,7 +9,7 @@
 				<h2 style="color: #25499A">Part 1: Windows Cold Wallet Installation</h2>
 				<p>NOTED:</p>
 				<ul>
-				  <li>Required to send 10,000 DXO into this wallet as MasterNode collateral, so we need about 2,005 DXO in our wallet</li>
+				  <li>Required to send 10,000 DXO into this wallet as MasterNode collateral, so we need about 10,005 DXO in our wallet</li>
 				  <li>This wallet will be the one that receive the MasterNode rewards</li>
 				  <li>It DOES NOT need to run 24/7</li>
 				</ul>

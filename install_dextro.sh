@@ -185,9 +185,9 @@ function snapshot_syncmn()
 {
 echo -e "copy snapshot to $CONFIGFOLDER"
 cd  >/dev/null 2>&1
-cd dextro_blocks_322715 >/dev/null 2>&1
-cp -r -p blocks $CONFIGFOLDER >/dev/null 2>&1
-cp -r -p chainstate $CONFIGFOLDER >/dev/null 2>&1
+
+unzip dextro_blocks.zip -d $CONFIGFOLDER >/dev/null 2>&1
+
 
 echo -e "bootstrap successful downloaded"
 }

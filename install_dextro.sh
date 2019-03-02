@@ -131,17 +131,12 @@ EOF
 }
 function snapshot_sync() 
 {
-
-
 echo -e "Setup snapshot bootstrap, please wait untill finished"
-
 cd  >/dev/null 2>&1
 rm dextro_blocks.zip
 wget -c https://github.com/dextrocoin/dextro/releases/download/3.0.0.0/dextro_blocks.zip >/dev/null 2>&1
 compile_error
-
 echo -e "bootstrap successful downloaded"
-
 }
 
 function stop_daemon()
@@ -186,10 +181,7 @@ function snapshot_syncmn()
 {
 echo -e "copy snapshot to $CONFIGFOLDER"
 cd  >/dev/null 2>&1
-
 unzip dextro_blocks.zip -d $CONFIGFOLDER >/dev/null 2>&1
-
-
 echo -e "bootstrap successful downloaded"
 }
 

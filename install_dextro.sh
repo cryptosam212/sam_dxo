@@ -131,8 +131,8 @@ EOF
 }
 function snapshot_sync() 
 {
-if [ ! -f dextro_blocks.zip ]
-then
+
+
 echo -e "Setup snapshot bootstrap, please wait untill finished"
 
 cd  >/dev/null 2>&1
@@ -144,7 +144,7 @@ unzip dextro_blocks.zip  >/dev/null 2>&1
 #cp -r -p chainstate $CONFIGFOLDER >/dev/null 2>&1
 #cd >/dev/null 2>&1
 echo -e "bootstrap successful downloaded"
-fi
+
 }
 
 function stop_daemon()
@@ -174,7 +174,7 @@ echo "Replace addnode to $COIN_NAME official addnode to $CONFIG_FILE"
 sed -i "/\b\(addnode\)\b/d" $CONFIG_FILE
 
 cat << EOF >> $CONFIG_FILE
-addnode=80.211.97.10:39320
+addode=80.211.97.10:39320
 addnode=185.181.11.195:39320
 addnode=66.130.28.120:39320
 addnode=45.76.122.156:39320

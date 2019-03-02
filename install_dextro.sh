@@ -804,7 +804,7 @@ then
 echo -e "${RED}ERROR: ${NC} No installed masternode $COIN_NAME1"
 echo ""
 else
-echo -e "${YELLOW}[ Write Node that want to UPGRADE/REPAIR ] OR [ write EXIT or press enter for back to menu ]: ${NC}"
+echo -e "${YELLOW}[ Write Node that want to delete ] OR [ write EXIT or press enter for back to menu ]: ${NC}"
 read DEL2
 if [[ $DEL2 = "" ]]
 then

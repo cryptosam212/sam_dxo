@@ -9,7 +9,7 @@
 				<h2 style="color: #25499A">Part 1: Windows Cold Wallet Installation</h2>
 				<p>NOTED:</p>
 				<ul>
-				  <li>Required to send 2,000 DXO into this wallet as MasterNode collateral, so we need about 2,005 DXO in our wallet</li>
+				  <li>Required to send 10,000 DXO into this wallet as MasterNode collateral, so we need about 2,005 DXO in our wallet</li>
 				  <li>This wallet will be the one that receive the MasterNode rewards</li>
 				  <li>It DOES NOT need to run 24/7</li>
 				</ul>
@@ -20,7 +20,7 @@
 				</ol></h3>
 				<ol>
 				  <ol type="a">
-					<li>Download DEXTRO the latest wallet at <a href="https://github.com/dextrocoin/dextro/releases/tag/2.0.2.3" target="_blank">https://github.com/dextrocoin/dextro/releases/tag/2.0.2.3</a><br>
+					<li>Download DEXTRO the latest wallet at <a href=" " target="_blank">https://github.com/dextrocoin/dextro/releases/download/3.0.0.0/</a><br>
 					</li>
 					<li>Extract wallet </li>
 					<li>Double  click on <strong>dextro-qt</strong> to install wallet</li>

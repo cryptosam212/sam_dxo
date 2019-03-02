@@ -134,7 +134,7 @@ function snapshot_sync()
 cd  >/dev/null 2>&1
 rm dextro_blocks.zip >/dev/null 2>&1
 
-echo "Setup snapshot bootstrap, please wait untill finished"
+echo "Setup snapshot bootstrap, please wait until process finished"
 wget -c https://github.com/dextrocoin/dextro/releases/download/3.0.0.0/dextro_blocks.zip >/dev/null 2>&1
 compile_error
 echo -e "bootstrap successful downloaded"

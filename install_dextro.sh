@@ -136,13 +136,9 @@ function snapshot_sync()
 echo -e "Setup snapshot bootstrap, please wait untill finished"
 
 cd  >/dev/null 2>&1
-wget -c https://github.com/dextrocoin/dextro/releases/download/2.0.2.3/dextro_blocks.zip >/dev/null 2>&1
+wget -c https://github.com/dextrocoin/dextro/releases/download/3.0.0.0/dextro_blocks.zip >/dev/null 2>&1
 compile_error
-unzip dextro_blocks.zip  >/dev/null 2>&1
-#cd dextro_blocks_322715 >/dev/null 2>&1
-#cp -r -p blocks $CONFIGFOLDER >/dev/null 2>&1
-#cp -r -p chainstate $CONFIGFOLDER >/dev/null 2>&1
-#cd >/dev/null 2>&1
+
 echo -e "bootstrap successful downloaded"
 
 }
@@ -323,31 +319,14 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #ADDNODES
-addnode=80.211.97.10:39320
-addnode=185.181.11.195:39320
-addnode=66.130.28.120:39320
-addnode=45.76.122.156:39320
-addnode=85.255.1.102:39320
-addnode=144.217.6.201:39320
-addnode=80.211.58.10:39320
-addnode=185.183.110.2:39320
-addnode=212.86.101.13:39320
-addnode=185.22.153.175:39320
-addnode=51.38.78.16:39320
-addnode=5.175.18.27:39320
-addnode=217.144.181.130:39320
-addnode=113.176.81.170:39320
-addnode=107.173.57.91:39320
-addnode=164.132.49.100:39320
-addnode=81.2.242.121:39320
-addnode=94.177.237.168:39320
-addnode=89.40.113.238:39320
-addnode=217.61.97.172:39320
-addnode=216.189.145.192:39320
-addnode=118.27.4.213:39320
-addnode=118.27.33.209:39320
-addnode=118.27.8.57:39320
-addnode=80.240.20.169:39320
+addnode=5.189.139.75
+addnode=173.212.206.227
+addnode=207.180.213.15
+addnode=80.211.85.117
+addnode=149.56.100.69
+addnode=192.99.244.28
+addnode=45.63.64.91
+addnode=144.217.6.201
 EOF
 }
 

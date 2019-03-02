@@ -174,31 +174,14 @@ echo "Replace addnode to $COIN_NAME official addnode to $CONFIG_FILE"
 sed -i "/\b\(addnode\)\b/d" $CONFIG_FILE
 
 cat << EOF >> $CONFIG_FILE
-addode=80.211.97.10:39320
-addnode=185.181.11.195:39320
-addnode=66.130.28.120:39320
-addnode=45.76.122.156:39320
-addnode=85.255.1.102:39320
-addnode=144.217.6.201:39320
-addnode=80.211.58.10:39320
-addnode=185.183.110.2:39320
-addnode=212.86.101.13:39320
-addnode=185.22.153.175:39320
-addnode=51.38.78.16:39320
-addnode=5.175.18.27:39320
-addnode=217.144.181.130:39320
-addnode=113.176.81.170:39320
-addnode=107.173.57.91:39320
-addnode=164.132.49.100:39320
-addnode=81.2.242.121:39320
-addnode=94.177.237.168:39320
-addnode=89.40.113.238:39320
-addnode=217.61.97.172:39320
-addnode=216.189.145.192:39320
-addnode=118.27.4.213:39320
-addnode=118.27.33.209:39320
-addnode=118.27.8.57:39320
-addnode=80.240.20.169:39320
+addnode=5.189.139.75
+addnode=173.212.206.227
+addnode=207.180.213.15
+addnode=80.211.85.117
+addnode=149.56.100.69
+addnode=192.99.244.28
+addnode=45.63.64.91
+addnode=144.217.6.201
 EOF
 }
 

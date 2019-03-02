@@ -180,11 +180,19 @@ EOF
 
 function snapshot_syncmn() 
 {
+cd  >/dev/null 2>&1
+if [ ! -f dextro_blocks.zip ]
+then
+echo "No bootstrap file dextro_blocks.zip, continue install without bootstrap"
+else
 echo -e "copy snapshot to $CONFIGFOLDER"
 cd  >/dev/null 2>&1
 unzip -o dextro_blocks.zip -d $CONFIGFOLDER >/dev/null 2>&1
 echo -e "bootstrap successful downloaded"
+fi
+
 }
+
 
 function create_config() 
 {
@@ -954,14 +962,7 @@ MENU_NAME="DEXTRO"
 echo -e "${YELLOW}First node must be ipv4. Installing Masternode $COIN_NAME1 ${NC}"
   get_ip
   create_config
-
-echo -e "copy snapshot to $CONFIGFOLDER"
-cd  >/dev/null 2>&1
-cd dextro_blocks_322715 >/dev/null 2>&1
-cp -r -p blocks $CONFIGFOLDER >/dev/null 2>&1
-cp -r -p chainstate $CONFIGFOLDER >/dev/null 2>&1
-echo -e "bootstrap successful downloaded"
-
+snapshot_syncmn
   create_key
   update_config
   configure_systemd
@@ -1055,13 +1056,7 @@ else
 fi
 #exit 1
   create_config
-cd >/dev/null 2>&1
-if [ ! -f dextro_blocks.zip ]
-then
-echo "No bootstrap file dextro_blocks.zip"
-else
 snapshot_syncmn
-fi
 echo ""
 ALIASA+=($ALIAS)
 PORTA+=($COIN_PORT)

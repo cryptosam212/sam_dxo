@@ -42,7 +42,7 @@
 					<img src="http://dextro.io/images/wallet2.jpg" width="1000px" style="margin:10px">
 					</li>
 					<li>Select on the newly created wallet address from the list and then click on "Copy" button to copy the address into the clipboard</li>
-					<li>Send exactly 2,000 DXO coins to the address that you just copied. Ensure the address is correct before you send out the coin.</li>
+					<li>Send exactly 10,000 DXO coins to the address that you just copied. Ensure the address is correct before you send out the coin.</li>
 					<li>After coin is sent out, you can verify the balance in the 'Transactions' tab and wait for at least 10 confirmations to validate your transaction (it usually takes about 30 minutes).</li>
 				  </ol>
 				</ol>

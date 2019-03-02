@@ -20,7 +20,7 @@
 				</ol></h3>
 				<ol>
 				  <ol type="a">
-					<li>Download DEXTRO the latest wallet at <a href="dddddd" target="_blank">https://github.com/dextrocoin/dextro/releases/download/3.0.0.0/</a><br>
+					<li>Download DEXTRO the latest wallet at <a href="https://github.com/dextrocoin/dextro/releases/download/3.0.0.0" target="_blank">https://github.com/dextrocoin/dextro/releases/download/3.0.0.0/</a><br>
 					</li>
 					<li>Extract wallet </li>
 					<li>Double  click on <strong>dextro-qt</strong> to install wallet</li>

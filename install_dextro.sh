@@ -23,7 +23,7 @@ RED="\033[0;31m"
 GREEN="\033[0;32m"
 NC='\033[0m'
 MAG='\e[1;35m'
-WALLET_FILE='dextro_v2.0.2.3_ubuntu_16.tar.gz*'
+WALLET_FILE='dextro_v3.0.0.0_linux.tar.gz*'
 
 purgeOldInstallation() {
     echo -e "${GREEN}Searching and removing old $COIN_NAME files and configurations${NC}"

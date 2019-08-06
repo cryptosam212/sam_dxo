@@ -1,0 +1,57 @@
+#!/bin/bash
+
+echo "test"
+
+content=$(wget https://github.com/cryptosam212/sam_dxo/raw/master/versiondextro.txt -q -O -)
+echo $content
+
+VERSINYA1="$(wget https://github.com/cryptosam212/sam_dxo/raw/master/versiondextro.txt -q -O - | grep "version"|head -1)"
+echo "$VERSINYA1"
+#mapfile -t variables < <(grep -oP 'version \K[^=]+' https://github.com/cryptosam212/sam_dxo/raw/master/version.txt)
+#for v in "${variables[@]}"; do
+#    printf "varname=%s\t\n" "$v"
+#done
+
+#VERSINYA="$(grep 'version' $content)"
+WORDTOREMOVE='version='
+FOO1=${VERSINYA1//$WORDTOREMOVE/}
+echo $FOO1
+
+
+
+#CLI cek
+VERSINYA="$(galilel-cli getinfo | grep "version"|head -1)"
+
+    echo -e "${VERSINYA}" ;
+WORDTOREMOVE='"version":'
+FOO=${VERSINYA//$WORDTOREMOVE/}
+WORDTOREMOVE=','
+FOO=${FOO//$WORDTOREMOVE/}
+
+echo $FOO
+
+if [ "$FOO" -eq "$FOO1" ]
+else
+{
+if [ "$FOO" -lt "$FOO1" ]
+then
+  echo "$FOO lower than $FOO1";
+fi
+
+if [ "$FOO" -gt "$FOO1" ]
+then
+  echo "$FOO > $FOO1";
+fi
+}
+fi
+echo "TEST lebih besar"
+
+echo "TEST lebih besar"
+
+if [ "$FOO" -lt "$FOO1" ];then
+  echo "$FOO lower than $FOO1";
+fi
+
+if [ "$FOO" -gt "$FOO1" ];then
+  echo "$FOO > $FOO1";
+fi

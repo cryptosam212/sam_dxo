@@ -57,7 +57,7 @@
 					<li style=" margin-bottom:20px">
 					Run the following command: <span style="background-color: #86BBE1; padding:3px 5px 3px 5px"><strong>masternode genkey</strong></span>
 					<br>
-				<img src="http://dextro.io/images/wallet3.jpg" width="1000px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/wallet3.jpg" width="1000px" style="margin:10px"><br>
 					A long  private key will be displayed (example as per below) and required for both Windows  wallet masternode config and Dextro Platform configuration later on:
 					<br>
 				<span style="font-size:20px; background-color:#86BBE1; padding:3px 5px 3px 5px; margin-left:10px"><strong>6K4Qop71Cs9sV5KoszVi9wCXXoXU2LHGdBNoeQrAose3TWEkTXc</strong></span>
@@ -95,17 +95,17 @@
 <a href="https://www.vultr.com/?ref=7773816-4F"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
 	</li>
 					<li>Register an account Vultr, then click on &quot;+&quot; button from the dashboard<br>
-					<img src="http://dextro.io/images/vultr1.png" width="800px" style="margin:10px">
+					<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/vultr1.png" width="800px" style="margin:10px">
 						
 </li>
 					<li>Select any 'Server Location' follow by Ubuntu 16.04 x64 for 'Server Type' and $5/mo with 25 GB SSD for 'Server Size' <br>
 				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/vultr2.png" width="800px" style="margin:10px">
 				</li>
 					<li>Enter a Hostname and Label for your VPS (for example, Dextro)<br>
-				<img src="http://dextro.io/images/vultr3.png" width="800px" style="margin:10px">
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/vultr3.png" width="800px" style="margin:10px">
 				</li>
 					<li>After successfully install the VPS, click on the server from the list to get and copy <strong>IP Address</strong> and <strong>root's Password</strong><br>
-				<img src="http://dextro.io/images/vultr4.png" width="800px" style="margin:10px"></li>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/vultr4.png" width="800px" style="margin:10px"></li>
 				  </ol>
 				  </ol>
 				<h2 style="color: #25499A">Part 3: Linux (Ubuntu) Hot Wallet Installation</h2>
@@ -118,12 +118,12 @@
 <h3><ol>
 				  <li>
 					Launch PuTTY application and login into VPS. Copy VPS IP Address and click open.<br>
-				<img src="http://dextro.io/images/putty1.png" width="500px" style="margin:10px">
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty1.png" width="500px" style="margin:10px">
 				<br>
-				<img src="http://dextro.io/images/putty1a.png" width="500px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty1a.png" width="500px" style="margin:10px"><br>
 				<br>
 				Login as root. Copy VPS Password and paste it into PuTTY (mouse right click to paste. Password not shown and press Enter)<br>
-				<img src="http://dextro.io/images/putty2.png" width="600px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty2.png" width="600px" style="margin:10px"><br>
 				<br>
 
 </li>
@@ -134,11 +134,11 @@
 				<li>
 				<span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px">wget https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/install_dextro.sh</span><br>
 				<br>
-				<img src="http://dextro.io/images/putty3.png" width="600px" style="margin:10px"><br><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty3.png" width="600px" style="margin:10px"><br><br>
 				</li>
 				<li>
 				<span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px">bash install_dextro.sh</span><br>
-				<img src="http://dextro.io/images/putty4.png" width="600px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty4.png" width="600px" style="margin:10px"><br>
 				<br>
 
 </li>
@@ -146,16 +146,16 @@
 				  </li>
 				  <li>
 				  Wait and follow the installing<br>
-				<img src="http://dextro.io/images/putty5.png" width="600px" style="margin:10px"><br>
-				<img src="http://dextro.io/images/putty6.png" width="600px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty5.png" width="600px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty6.png" width="600px" style="margin:10px"><br>
 				  </li>
 				<li>
 				  copy and paste your private key that generated<br>
-				<img src="http://dextro.io/images/putty7.png" width="600px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty7.png" width="600px" style="margin:10px"><br>
 				Press Enter to continue<br>
-				<img src="http://dextro.io/images/putty8.png" width="600px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty8.png" width="600px" style="margin:10px"><br>
 				If your setup is finish you will see screen like below image<br>
-				<img src="http://dextro.io/images/putty9.png" width="600px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/putty9.png" width="600px" style="margin:10px"><br>
 				Congratulations..... Your Dextro Masternode setup VPS was done
 				  </li>
 				</ol></h3>

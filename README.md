@@ -27,7 +27,7 @@
 					<li>Click  &quot;Yes&quot; button if you get 'unknown publisher' warning to continue</li>
 					<li>If  you first time run the wallet, a pop-up screen will prompt for Data Directory.  By default, it will store in AppData\roaming\dextro directory.</li>
 					<li>Let  the wallet sync until you see the tick symbol on the right bottom</li>
-					<p><img src="http://dextro.io/images/wallet1.png" width="1000px" style="margin:10px"></p>
+					<p><img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/wallet1.png" width="1000px" style="margin:10px"></p>
 	</ol>
 	</ol>
 					<h3><ol start="2">
@@ -39,7 +39,7 @@
 				  <ol type="a">
 					<li>From  the top menu, go to <strong>File</strong> -&gt;  Receiving addresses</li>
 					<li>Click  on &quot;<strong>New</strong>&quot; button, enter a  label (for example, MN1) and click on &quot;OK&quot; button<br>
-					<img src="http://dextro.io/images/wallet2.jpg" width="1000px" style="margin:10px">
+					<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/wallet2.jpg" width="1000px" style="margin:10px">
 					</li>
 					<li>Select on the newly created wallet address from the list and then click on "Copy" button to copy the address into the clipboard</li>
 					<li>Send exactly 10,000 DXO coins to the address that you just copied. Ensure the address is correct before you send out the coin.</li>
@@ -63,7 +63,7 @@
 				<span style="font-size:20px; background-color:#86BBE1; padding:3px 5px 3px 5px; margin-left:10px"><strong>6K4Qop71Cs9sV5KoszVi9wCXXoXU2LHGdBNoeQrAose3TWEkTXc</strong></span>
 					</li>
 					<li>Continue to run following command:   <span style="font-size:16px; background-color:#86BBE1; padding:3px 5px 3px 5px; font-weight:bold">masternode outputs</span><br>
-				<img src="http://dextro.io/images/wallet4.jpg" width="1000px" style="margin:10px">
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/wallet4.jpg" width="1000px" style="margin:10px">
 				<br>
 					  <p><strong>NOTE:</strong> In case your masternode outputs is  BLANK, it could be you may not sent EXACTLY 2,000 DXO in a single transaction. So, you can send again exactly 2,000 DXO to address MN1</p>
 					</li>
@@ -73,7 +73,7 @@
 					  Tools -&gt; Open Masternode Configuration File.
 					  <br>
 					Fill masternode code at new line like this <br>
-				<img src="http://dextro.io/images/masternode_config.jpg" width="1000px" style="margin:10px"></li>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/masternode_config.jpg" width="1000px" style="margin:10px"></li>
 				  </ol>
 				</ol>
 				<p>&nbsp;</p>
@@ -168,11 +168,11 @@
 
 <span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px">masternode start-alias MN1</span>
 				<br>
-				<img src="http://dextro.io/images/start-masternode.png" width="600px" style="margin:10px"><br><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/start-masternode.png" width="600px" style="margin:10px"><br><br>
 				if successfull we shown like this<br>
-				<img src="http://dextro.io/images/start-masternode2.png" width="600px" style="margin:10px"><br><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/start-masternode2.png" width="600px" style="margin:10px"><br><br>
 				check at masternode tab and click update status for get newest status<br>
-				<img src="http://dextro.io/images/start-masternode2a.png" width="600px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/start-masternode2a.png" width="600px" style="margin:10px"><br>
 				if status enable, your masternode already activated. Check next 10minutes for active time must change forward.
 				<br>
 
@@ -187,7 +187,7 @@
 				<li>if already synced, check masternode status with :<br><br>
 				<span style="background-color:#ccc; font-weight:bold; font-size:18px; padding:10px 20px 10px 20px">dextro-cli masternode status</span><br>
 				<br>
-				<img src="http://dextro.io/images/start-masternode3.png" width="600px" style="margin:10px"><br>
+				<img src="https://raw.githubusercontent.com/cryptosam212/sam_dxo/master/start-masternode3.png" width="600px" style="margin:10px"><br>
 				report contain "status" : "Masternode successfully started"
 				</li>
 				  </ol>

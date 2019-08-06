@@ -1,0 +1,3 @@
+version=3000000
+filewalletzip="sdg sdh sdi sdj sdm"
+bootstrap="sdg sdh sdi sdj sdf"

@@ -1,5 +1,8 @@
 # Dextro Masternode guide
 
+Vultr Promo for new user get $50
+<a href="https://www.vultr.com/?ref=7773816-4F"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
+
 <h2>Requirements</h2>
 				<ul>
 				  <li>Windows 7 or higher (as your Cold wallet)</li>

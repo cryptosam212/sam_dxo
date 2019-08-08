@@ -1,8 +1,6 @@
 version=3030000
 filewalletzip="sdg sdh sdi sdj sdm"
 bootstrap="sdg sdh sdi sdj sdf"
-addnode="addnode=108.61.246.43:39320
-addnode=207.148.76.150:39320
 addnode=212.237.21.20:39320
 addnode=185.22.153.175:39320
 addnode=95.179.155.81:39320
